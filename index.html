@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:3px 50px;
+    background:white;
+}
+
+nav h2{
+    color:#10b981;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+/* Hero */
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") no-repeat center center/cover;
+    text-align:center;
+    padding:100px 20px;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:5px solid white;
+    margin:30px 0;
+    object-fit:cover;
+    background:white;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Section */
+section{
+    padding:80px 50px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    color:#1f2937;
+}
+
+/* About */
+.about-container{
+    display:flex;
+    flex-direction:column;   
+    align-items:center;     
+    text-align:center;      
+    gap:40px;
+}
+
+.about-text{
+    flex:1;
+    line-height:1.8;
+    color:#374151;
+    max-width:700px;
+}
+
+.about-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    width:150px;
+}
+
+.project{
+    background:#fee2e2;
+}
+
+.learning{
+    background:#dbeafe;
+}
+
+.dedication{
+    background:#dcfce7;
+}
+
+.box h3{
+    color:#10b981;
+    font-size:28px;
+}
+
+.about-section{
+    background:#ecfdf5;
+}
+
+/* Skills */
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr); 
+    gap:40px;
+}
+
+.skill{
+    background:hsla(0, 0%, 100%, 0.645);
+    padding:30px;
+    border-radius:40px;
+    text-align:center;
+}
+
+.html{
+    background:#ffe4e6;
+}
+
+.css{
+    background:#c7d2fe;
+}
+
+.c{
+    background:#fef9c3;
+}
+
+.cpp{
+    background:#e9d5ff;
+}
+
+.java{
+    background:#dcfce7;
+}
+
+.sql{
+    background:#fce7f3;
+}
+
+.skill h3{
+    color:#10b981;
+}
+
+.skills-section{
+    background:#e0f2fe;
+}
+
+/* Projects */
+.work-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.card-top{
+    height:150px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.tag{
+    display:inline-block;
+    background:#10b981;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    margin-top:10px;
+    font-size:12px;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+                url("contact.jpg") no-repeat center center/cover;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>MyPortfolio</h2>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <h1>Hi, I'm Shoriful Islam</h1>
+
+    <img src="profile.jpg">
+    <p>Aspiring Full-Stack Developer | Problem Solver</p>
+</section>
+
+<!-- About -->
+<section class="about-section" id="about">
+    <h2>About Me</h2>
+
+    <div class="about-container">
+
+        <div class="about-text">
+            I'm a passionate and dedicated web developer from Bangladesh. I enjoy creating modern, responsive, and user-friendly websites.
+             I am currently studying at Chandpur Science and Technology University (CSTU) and working on improving my programming knowledge.
+
+
+            <br><br>
+
+           <b>Why work with me?</b> I deliver quality work, meet deadlines, and focus on user-friendly design.
+        </div>
+
+        <div class="about-box">
+    <div class="box project">
+        <h3>3+</h3>
+        <p>Projects</p>
+    </div>
+
+    <div class="box learning">
+        <h3>2+</h3>
+        <p>Years Learning</p>
+    </div>
+
+    <div class="box dedication">
+        <h3>100%</h3>
+        <p>Dedication</p>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="skills-section" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+    <div class="skill html"><h3>HTML</h3><p>Semantic markup</p></div>
+    <div class="skill css"><h3>CSS</h3><p>Responsive design</p></div>
+    <div class="skill c"><h3>C</h3><p>Programming</p></div>
+    <div class="skill cpp"><h3>C++</h3><p>OOP</p></div>
+    <div class="skill java"><h3>Java</h3><p>Backend</p></div>
+    <div class="skill sql"><h3>SQL</h3><p>Database</p></div>
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="work-container">
+
+        <div class="card">
+            <div class="card-top" style="background:linear-gradient(45deg,#3bf6a8,#2563eb)"></div>
+            <div class="card-body">
+                <h3>Project 1</h3>
+                <p>Library Management System</p>
+                <span class="tag">MySQL</span>
+                <span class="tag">PHP</span>
+                <span class="tag">CSS</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-top" style="background:linear-gradient(45deg,#9066c3ea,#0891b2)"></div>
+            <div class="card-body">
+                <h3>Project 2</h3>
+                <p>Portfolio Website</p>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-top" style="background:linear-gradient(45deg,#c5af22,#16a34a)"></div>
+            <div class="card-body">
+                <h3>Project 3</h3>
+                <p>Project description</p>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <p>📍 Address: Wapda Gate,Chandpur Sadar, Chandpur, Bangladesh</p>
+
+    <p>📧 Email: 
+        <a href="mailto:shoriful2392@gmail.com">
+            shoriful2392@gmail.com
+        </a>
+    </p>
+
+    <p>💬 WhatsApp: 
+        <a href="https://wa.me/8801745881947" target="_blank">
+        Chat on WhatsApp
+        </a>
+    </p>
+
+    <p>📞 Phone: 
+        <a href="tel:01745881947">
+            01745881947
+        </a>
+    </p>
+
+    <p>🌐 GitHub: 
+        <a href="https://github.com/mdshorifulislam357764-dot" target="_blank">
+            github.com
+        </a>
+    </p>
+</section>
+
+</body>
+</html>
