@@ -220,56 +220,26 @@ h2{
                 url("contact.jpg") no-repeat center center/cover;
 }
 
-   <! /* 📱 Mobile Responsive */>
-@media (max-width: 768px){
+   
+    /* Safe Responsive Fix */
+@media (max-width:768px){
 
-    /* Navbar */
-    nav{
-        flex-direction:column;
-        align-items:center;
-        padding:10px;
+    .skills-container{
+        grid-template-columns:1fr;
     }
 
-    nav ul{
-        flex-direction:column;
-        gap:10px;
-        margin-top:10px;
-    }
-
-    /* Hero */
-    .hero h1{
-        font-size:28px;
-    }
-
-    .hero img{
-        width:150px;
-        height:150px;
-    }
-
-    /* Section padding */
-    section{
-        padding:50px 20px;
-    }
-
-    /* About box */
     .about-box{
         flex-direction:column;
         align-items:center;
     }
 
-    /* Skills */
-    .skills-container{
-        grid-template-columns:1fr;
+    nav ul{
+        flex-direction:column;
+        align-items:center;
     }
 
-    /* Projects */
-    .work-container{
-        grid-template-columns:1fr;
-    }
-
-    /* Text size */
-    h2{
-        font-size:28px;
+    section{
+        padding:50px 20px;
     }
 }
 
